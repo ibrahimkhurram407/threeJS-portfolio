@@ -85,3 +85,26 @@ canvas {
   .left {
     grid-column: 6 / 12;
   }
+
+  @media (max-width: 768px) {
+    main {
+      grid-template-columns: repeat(12, 1fr);
+    }
+  
+    header {
+      grid-column: 2 / span 10 !important;
+    }
+  
+    section {
+      grid-column: 2 / 12;
+    }
+  
+    blockquote {
+      text-align: center;
+      grid-column: 2 / span 10;
+    }
+  
+    .left {
+      grid-column: 2 / 12;
+    }
+  }
